@@ -23,8 +23,8 @@ export async function POST() {
             },
 
         ],
-        success_url: "http://localhost:3000/success",
-        cancel_url: "http://localhost:3000/cancel",
+        success_url: "https://nextjs-stripe-checkout-tawny.vercel.app/success",
+        cancel_url: "https://nextjs-stripe-checkout-tawny.vercel.app/cancel",
     });
 
     return NextResponse.json({ url: session.url })
